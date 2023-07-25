@@ -1,6 +1,6 @@
 const data = [
     {
-      question: "O que é Vanilla JavaScript?",
+      question: "What is Vanilla JavaScript?",
       options: [
         "JavaScript puro",
         "Uma biblioteca JavaScript",
@@ -10,23 +10,23 @@ const data = [
       answer: "JavaScript puro",
     },
     {
-      question: "Com qual instrução declaramos uma constante em JavaScript?",
+      question: "With which instruction do we declare a constant in JavaScript?",
       options: ["const", "let", "var", "define"],
       answer: "const",
     },
     {
-      question: "Qual dos tipos de dado a seguir não existe em JavaScript?",
+      question: "Which of the following data types does not exist in JavaScript?",
       options: ["string", "number", "boolean", "float"],
       answer: "float",
     },
     {
-      question: "Qual dos métodos a seguir seleciona um elemento?",
+      question: "Which of the following methods selects an element?",
       options: ["querySelector", "parseInt", "sort", "reduce"],
       answer: "querySelector",
     },
     {
       question:
-        "Qual destas propriedades da a quantidade de elementos de um array?",
+        "Which of these properties gives the number of elements in an array?",
       options: ["qty", "length", "items", "index"],
       answer: "length",
     },
