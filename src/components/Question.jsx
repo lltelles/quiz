@@ -16,7 +16,7 @@ const Question = () => {
     const onSelectOption = (option) => {
         dispatch({
             type: 'CHECK_ANSWER',
-            payload: {answer: currentQuestion.answer, option}
+            payload: { answer: currentQuestion.answer, option }
         })
     }
 
@@ -31,13 +31,25 @@ const Question = () => {
                         option={option}
                         answer={currentQuestion.answer}
                         selectOption={() => onSelectOption(option)}
+                        hide={quizState.optionToHide === option ? 'hide': null}
                     />
                 ))}
             </div>
+            {!quizState.answerSelected && !quizState.help && (
+                <>
+                    {currentQuestion.tip && (
+                        <button onClick={() => dispatch({ type: 'SHOW_TIP' })}>Dica</button>
+                    )}
+                    <button onClick={() => dispatch({type: 'REMOVE_OPTION'})}>Delete one</button>
+                </>
+            )}
+            {!quizState.answerSelected && quizState.help === 'tip' && <p>{currentQuestion.tip}</p>}
             {quizState.answerSelected && (<button onClick={() => dispatch({ type: 'CHANGE_QUESTION' })}>Continue</button>)
             }
         </div>
     )
 }
+
+
 
 export default Question
