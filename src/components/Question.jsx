@@ -2,6 +2,8 @@
 import { useContext } from 'react'
 import { QuizContext } from '../context/quiz'
 
+import Options from './Options'
+
 import './Question.css'
 
 
@@ -11,14 +13,29 @@ const Question = () => {
 
     const currentQuestion = quizState.questions[quizState.currentQuestion]
 
+    const onSelectOption = (option) => {
+        dispatch({
+            type: 'CHECK_ANSWER',
+            payload: {answer: currentQuestion.answer, option}
+        })
+    }
+
     return (
         <div id='question'>
             <p>Question {quizState.currentQuestion + 1} of {quizState.questions.length}</p>
             <h2>{currentQuestion.question}</h2>
             <div id="options-container">
-                <p>Options</p>
+                {currentQuestion.options.map((option) => (
+                    <Options
+                        key={option}
+                        option={option}
+                        answer={currentQuestion.answer}
+                        selectOption={() => onSelectOption(option)}
+                    />
+                ))}
             </div>
-            <button onClick={() => dispatch({type: 'CHANGE_QUESTION'})}>Continue</button>
+            {quizState.answerSelected && (<button onClick={() => dispatch({ type: 'CHANGE_QUESTION' })}>Continue</button>)
+            }
         </div>
     )
 }
