@@ -3,29 +3,29 @@ const data = [
       category: "HTML",
       questions: [
         {
-          question: "Qual tag cria um parágrafo?",
+          question: "Which tag creates a paragraph?",
           options: ["<p>", "<h1>", "<text>", "<ul>"],
           answer: "<p>",
-          tip: "É uma tag de uma letra apenas",
+          tip: "It's a single-letter tag.",
         },
         {
-          question: "Qual atributo adiciona um link para a tag a?",
+          question: "Which attribute adds a link to the 'a' tag?",
           options: ["alt", "href", "src", "link"],
           answer: "href",
           tip: "Hyperlink Reference",
         },
         {
-          question: "As listas não ordenadas tem a tag de:",
+          question: "What is the tag for unordered lists?",
           options: ["<ol>", "<ul>", "<li>", "<list>"],
           answer: "<ul>",
         },
         {
-          question: "Qual atributo deixa o input obrigatório?",
+          question: "Which attribute makes an input mandatory?",
           options: ["placeholder", "value", "required", "maxlength"],
           answer: "required",
         },
         {
-          question: "A tag semântica indicada para rodapés é a:",
+          question: "The semantic tag recommended for footnotes is:",
           options: ["div", "main", "section", "footer"],
           answer: "footer",
         },
@@ -35,22 +35,22 @@ const data = [
       category: "CSS",
       questions: [
         {
-          question: "Qual regra altera a cor de um elemento?",
+          question: "Which rule changes the color of an element?",
           options: ["color", "background-color", "font-size", "transition"],
           answer: "color",
-          tip: "Cor em inglês",
+          tip: "Starts with the letter C.",
         },
         {
-          question: "Para aumentar a fonte de um elemento utilizamos:",
+          question: "To increase the font size of an element, we use:",
           options: ["font", "text-transform", "font-size", "hover"],
           answer: "font-size",
-          tip: "alguma dica",
+          tip: "Use 'font-size' for changing the element's font size.",
         },
         {
-          question: "A posição que deixa um elemento fixo é a:",
+          question: "The position that keeps an element fixed is:",
           options: ["static", "absolute", "fixed", "relative"],
           answer: "fixed",
-          tip: "alguma dica",
+          tip: "The position that holds an element fixed on the screen is called 'fixed'.",
         },
       ],
     },
@@ -58,33 +58,33 @@ const data = [
       category: "JavaScript",
       questions: [
         {
-          question: "O que é Vanilla JavaScript?",
+          question: "What is Vanilla JavaScript?",
           options: [
-            "JavaScript puro",
-            "Uma biblioteca JavaScript",
-            "Um framework JavaScript",
-            "Um compilador de JavaScript",
+            "JavaScript only",
+            "A JavaScript library",
+            "A JavaScript framework",
+            "A JavaScript compiler",
           ],
-          answer: "JavaScript puro",
+          answer: "JavaScript only",
         },
         {
-          question: "Com qual instrução declaramos uma constante em JavaScript?",
+          question: "Which instruction is used to declare a constant in JavaScript?",
           options: ["const", "let", "var", "define"],
           answer: "const",
         },
         {
-          question: "Qual dos tipos de dado a seguir não existe em JavaScript?",
+          question: "Which of the following data types does not exist in JavaScript?",
           options: ["string", "number", "boolean", "float"],
           answer: "float",
         },
         {
-          question: "Qual dos métodos a seguir seleciona um elemento?",
+          question: "Which of the following methods selects an element?",
           options: ["querySelector", "parseInt", "sort", "reduce"],
           answer: "querySelector",
         },
         {
           question:
-            "Qual destas propriedades da a quantidade de elementos de um array?",
+            "Which of these properties gives the number of elements in an array?",
           options: ["qty", "length", "items", "index"],
           answer: "length",
         },

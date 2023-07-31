@@ -38,7 +38,7 @@ const Question = () => {
             {!quizState.answerSelected && !quizState.help && (
                 <>
                     {currentQuestion.tip && (
-                        <button onClick={() => dispatch({ type: 'SHOW_TIP' })}>Dica</button>
+                        <button onClick={() => dispatch({ type: 'SHOW_TIP' })}>Hint</button>
                     )}
                     <button onClick={() => dispatch({type: 'REMOVE_OPTION'})}>Delete one</button>
                 </>
